@@ -1,0 +1,6 @@
+from ubuntu
+
+# Python pre-requisites
+RUN apt-get install -y -q python-setuptools python-dev python-software-properties
+RUN apt-get install -y -q libevent-dev
+RUN easy_install pip virtualenv
