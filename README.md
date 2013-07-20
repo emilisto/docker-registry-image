@@ -3,7 +3,7 @@
 ```bash
 $ git submodule init && git submodule update
 $ vagrant up
-...
+# This will also bootstrap docker and build the docker-registry image specified in Dockerfile
 $ vagrant ssh
 vagrant$ cd /vagrant
 vagrant$ CONTAINER_ID=$(docker run docker-registry)
