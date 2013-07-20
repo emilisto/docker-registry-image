@@ -6,7 +6,6 @@ $ vagrant up
 ...
 $ vagrant ssh
 vagrant$ cd /vagrant
-
 vagrant$ CONTAINER_ID=$(docker run docker-registry)
 vagrant$ PORT=$(docker port $CONTAINER_ID 5000)
 vagrant$ docker tag docker-registry localhost.localdomain:$PORT/ubuntu
